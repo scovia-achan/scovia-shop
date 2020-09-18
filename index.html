@@ -5,52 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico" />
-    
+
     <title>Shopping site</title>
   </head>
   <body>
-    <header>
-      <h1>Scovia's Cafe</h1>
-    </header>
-    <nav>
+    <header></header>
+    <nav id="nav-bar">
+      <h1 id="scovia">S'Cafe</h1>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li class="nav-item"><a href="#">HOME</a></li>
+        <li class="nav-item"><a href="#">ABOUT US</a></li>
+        <li class="nav-item"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
     <main>
-      <div class="food">
-        <img src="images/capuccino.jpg" alt="capuccino" />
-        <div class="detail">
+      <div class="all-menus">
+        <div class="food">
+          <img src="images/capuccino.jpg" alt="capuccino" />
+          <div class="detail">
             <p>Capuccino</p>
-            <p>Ush.12000</p>
+            <p>Ush.12,000</p>
+          </div>
         </div>
-        
-      </div>
 
-      <div class="food">
-        <img src="images/sandwich.jpg" alt="sandwich" />
-        <div class="detail">
+        <div class="food">
+          <img src="images/capuccino.jpg" alt="sandwich" />
+          <div class="detail">
             <p>Sandwich</p>
-            <p>Ush.25000</p>
+            <p>Ush.25,000</p>
+          </div>
         </div>
-      </div>
 
-      <div class="food">
-        <img src="images/friedchicken.jpg" alt="friedchicken" />
-        <div class="detail">
+        <div class="food">
+          <img src="images/friedchicken.jpg" alt="friedchicken" />
+          <div class="detail">
             <p>Crispy Chicken</p>
-            <p>Ush.25000</p>
+            <p>Ush.25,000</p>
+          </div>
         </div>
         
+        <div class="food">
+          <img src="images/friedchicken.jpg" alt="friedchicken" />
+          <div class="detail">
+            <p>Crispy Chicken</p>
+            <p>Ush.25,000</p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-      <p>&copy; Copyright Scovia Achan</p>
-      <a href="https://www.facebook.com/scoviakelsy.achan">Facebook</a>
-      <a href="https://twitter.com/scovia_achan">Twitter</a>
-      <a href="https://www.linkedin.com/in/scovia-achan-425905117/">Linkedin</a>
+      <div>
+        <ul>
+          <li class="social">
+            <span>
+              <img src="static/svg/facebook.svg" alt="facebook" />
+              <!-- <a href="https://www.facebook.com/scoviakelsy.achan">Facebook</a> -->
+            </span>
+          </li>
+          <li class="social">
+            <span>
+              <img src="static/svg/twitter.svg" alt="twitter" />
+              <!-- <a href="https://twitter.com/scovia_achan">Twitter</a></li> -->
+            </span>
+          </li>
+
+          <li class="social">
+            <a href="https://www.linkedin.com/in/scovia-achan-425905117/"
+              ><img src="./static/svg/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact me</h3>
+        <form action="" method="POST">
+          <div>
+            <input type="text" name="name" placeholder="Name" />
+          </div>
+          <div>
+            <input type="text" name="name" placeholder="Email" />
+          </div>
+          <div>
+            <textarea
+              cols="20"
+              rows="5"
+              type="text"
+              name="name"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </form>
+      </div>
     </footer>
+    <div
+      style="
+        background-color: black;
+        padding: 0.3rem;
+        text-align: center;
+        color: aliceblue;
+      "
+    >
+      <p>Copyright &copy;2020 Scovia Inc.</p>
+    </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
