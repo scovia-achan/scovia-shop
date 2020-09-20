@@ -36,6 +36,11 @@ body {
 
 }
 
+.cart-container{
+    /* display: flex; */
+    padding-left: 15px;
+}
+
 .all-menus{
     display: flex;
     flex-wrap: wrap;
