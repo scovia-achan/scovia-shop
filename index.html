@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 
     <title>Shopping site</title>
   </head>
   <body>
     <header></header>
     <nav id="nav-bar">
-      <h1 id="scovia">S'Cafe</h1>
-      <ul>
-        <li class="nav-item"><a href="#">HOME</a></li>
-        <li class="nav-item"><a href="#">ABOUT US</a></li>
-        <li class="nav-item"><a href="#">CONTACT</a></li>
-      </ul>
+      <div>
+      <span id="scovia">Scovia Café</span>
+        <ul>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About us</a></li>
+          <li class="nav-item"><a href="#">Feedback</a></li>
+          <li class="nav-item"><a href="#">
+            <img src="/static/svg/carts.svg" alt="">
+          </a></li>
+        </ul>
+      </div>
     </nav>
+    <div class="cart-container">
+      
+
+    </div>
     <main>
       <div class="all-menus">
         <div class="food">
-          <img src="images/capuccino.jpg" alt="capuccino" />
+          <div>
+            <img src="../images/coffee.jpg" alt="capuccino" />
+          </div>
           <div class="detail">
             <p>Capuccino</p>
             <p>Ush.12,000</p>
@@ -29,26 +41,32 @@
         </div>
 
         <div class="food">
-          <img src="images/capuccino.jpg" alt="sandwich" />
+          <div>
+            <img src="../images/drinks.jpg" alt="capuccino" />
+          </div>
           <div class="detail">
-            <p>Sandwich</p>
+            <p>Drinks</p>
             <p>Ush.25,000</p>
           </div>
         </div>
 
         <div class="food">
-          <img src="images/friedchicken.jpg" alt="friedchicken" />
+          <div>
+            <img src="../images/bigmeals.jpg" alt="friedchicken" />
+          </div>
           <div class="detail">
-            <p>Crispy Chicken</p>
+            <p>Big meals</p>
             <p>Ush.25,000</p>
           </div>
         </div>
         
         <div class="food">
-          <img src="images/friedchicken.jpg" alt="friedchicken" />
+          <div>
+            <img src="images/dessert.jpg" alt="friedchicken" />
+          </div>
           <div class="detail">
-            <p>Crispy Chicken</p>
-            <p>Ush.25,000</p>
+            <p>Delicious desserts</p>
+            <p>Ush.20,000</p>
           </div>
         </div>
       </div>
@@ -58,27 +76,30 @@
         <ul>
           <li class="social">
             <span>
-              <img src="static/svg/facebook.svg" alt="facebook" />
-              <!-- <a href="https://www.facebook.com/scoviakelsy.achan">Facebook</a> -->
+              <a href="https://www.facebook.com/scoviakelsy.achan">
+                <img src="static/svg/facebook.svg" alt="facebook" />
+              </a>
             </span>
           </li>
           <li class="social">
             <span>
-              <img src="static/svg/twitter.svg" alt="twitter" />
-              <!-- <a href="https://twitter.com/scovia_achan">Twitter</a></li> -->
+              <a href="https://twitter.com/scovia_achan">
+                <img src="static/svg/twitter.svg" alt="twitter" />
+              </a>
+              
             </span>
           </li>
 
           <li class="social">
-            <a href="https://www.linkedin.com/in/scovia-achan-425905117/"
-              ><img src="./static/svg/linkedin.svg" alt="linkedin"
-            /></a>
+            <a href="https://www.linkedin.com/in/scovia-achan-425905117/">
+              <img src="./static/svg/linkedin.svg" alt="linkedin">
+            </a>
           </li>
         </ul>
       </div>
 
       <div>
-        <h3>Contact me</h3>
+        <h3>Feedback on service</h3>
         <form action="" method="POST">
           <div>
             <input type="text" name="name" placeholder="Name" />
@@ -100,7 +121,7 @@
     </footer>
     <div
       style="
-        background-color: black;
+        background-color: rgb(36, 35, 35);
         padding: 0.3rem;
         text-align: center;
         color: aliceblue;

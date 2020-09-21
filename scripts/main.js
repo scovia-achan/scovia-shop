@@ -12,5 +12,5 @@
         return scovia.getElementsByClassName(element)
     }
 
-    S("scovia").color = '#F00'
+    // S("scovia").color = '#F00'
 })(document);

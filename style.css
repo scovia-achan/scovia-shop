@@ -1,15 +1,23 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #dfdde6;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
     
 }
 #nav-bar{
+    
+    background-color: aliceblue;
+    color: #444444;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.13);
+}
+#nav-bar>div{
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #252934;
-    color: aliceblue;
-    /* padding: 20px 0; */
 }
 
 #nav-bar ul{
@@ -18,51 +26,70 @@ body {
     
 }
 #nav-bar a{
-    color: aliceblue;
+    color: #444444;
     text-decoration: none;
-    margin-right: 25px;
+    margin-left: 25px;
     cursor: pointer;
 }
 
-#nav-bar h1{
+#nav-bar>div>span{
     display: flex;
-    color: aliceblue;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 
+}
+
+.cart-container{
+    /* display: flex; */
+    padding-left: 15px;
 }
 
 .all-menus{
     display: flex;
     flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
     
 }
 .all-menus>div{
-    flex: 0 50%;
+    flex: 0 45%;
 }
 .food{
     width: 40%;
     height: 100%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);;   
-    margin: 0 auto 25px auto;
-    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.23); 
+    padding: 10px;
     box-sizing: border-box;
+    background-color: aliceblue;
+    margin-top: 1rem;
+    
     
 }
 .detail{
     text-align: center;
     color: #00bcd4;
-    font-size: 130%;
+    font-size: 1rem;
 }
 .food img{
     width: 100%;
-    
-    
+    height: 15rem;
+    object-fit: cover;
+    transition-duration: 1s;
+}
+
+.food img:hover{
+    transform: scale(1.2);
+}
+
+.food>div{
+    clip-path: polygon(0% 0%, 0% 15rem, 100% 15rem, 100% 0%);
 }
 footer{
     padding: 30px 90px 40px 90px;
     display: flex;
     justify-content: space-around;
-    background-color: #333333;
+    background-color: #979595;
     color: aliceblue;
 }
 
@@ -83,4 +110,8 @@ footer li {
 
 footer input {
     margin: .75em;
+}
+
+@media screen and(min-width:200px){
+    
 }
