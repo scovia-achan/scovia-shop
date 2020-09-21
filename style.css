@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #dfdde6;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
     
 }
 #nav-bar{
@@ -57,7 +59,7 @@ body {
     width: 40%;
     height: 100%;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.23); 
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: aliceblue;
     margin-top: 1rem;
@@ -67,7 +69,7 @@ body {
 .detail{
     text-align: center;
     color: #00bcd4;
-    font-size: 130%;
+    font-size: 1rem;
 }
 .food img{
     width: 100%;
