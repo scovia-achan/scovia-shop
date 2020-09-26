@@ -87,6 +87,34 @@ body {
 .food>div{
     clip-path: polygon(0% 0%, 0% 15rem, 100% 15rem, 100% 0%);
 }
+form{
+    margin: 30px auto;
+    display: block;
+}
+input[type=text], input[type=email], textarea{
+    background: #1e242c;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+textarea
+
+.button{
+    background-color: rgb(34, 143, 34);
+    color: aliceblue;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.feedback>form>button:hover{
+    background-color: rgb(33, 37, 36);
+}
 footer{
     padding: 30px 90px 40px 90px;
     display: flex;

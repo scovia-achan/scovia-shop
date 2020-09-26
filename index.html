@@ -10,7 +10,7 @@
     <title>Shopping site</title>
   </head>
   <body>
-    <header></header>
+    
     <nav id="nav-bar">
       <div>
       <span id="scovia">Scovia Café</span>
@@ -97,15 +97,25 @@
           </li>
         </ul>
       </div>
-
-      <div>
+      <form class="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
+        <input placeholder="Name" type="text" name="name" required="">
+        <input placeholder="Enter email" type="email" name="email" required="">
+        <textarea placeholder="Your Message" type="text" name="message"></textarea>
+        <div id="success">
+          <div>
+            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+          </div>
+        </div>
+        <input class="button" type="submit" id="submit" value="SUBMIT">
+      </form>
+      <!-- <div class="feedback">
         <h3>Feedback on service</h3>
         <form action="" method="POST">
           <div>
             <input type="text" name="name" placeholder="Name" />
           </div>
           <div>
-            <input type="text" name="name" placeholder="Email" />
+            <input type="email" name="name" placeholder="Email" />
           </div>
           <div>
             <textarea
@@ -116,8 +126,9 @@
               placeholder="Message"
             ></textarea>
           </div>
+          <button>Submit</button>
         </form>
-      </div>
+      </div> -->
     </footer>
     <div
       style="
@@ -129,6 +140,7 @@
     >
       <p style="font-size: .9rem;">Copyright &copy;2020 Scovia Inc.</p>
     </div>
+   
     <script src="./scripts/main.js"></script>
   </body>
 </html>
