@@ -3,8 +3,6 @@ body {
     margin: 0;
     background-color: #dfdde6;
     font-family: 'Merriweather', serif;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
     font-size: 1rem;
     
 }
@@ -35,8 +33,11 @@ body {
     padding: 12px;
     cursor: pointer;
 }
-#nav-bar ul li:hover{
-    background-color: gray;
+#nav-bar ul a:hover{
+    background-color:  rgb(225, 238, 250);
+}
+#nav-bar ul a:active{
+    /* background-color: rgb(163, 125, 144); */
 }
 
 #nav-bar>div>span{
@@ -132,7 +133,6 @@ body {
 }
 
 .google-map{
-    /* background-color: aquamarine; */
     width: 100%;
     height: 300px;
     margin-top: 8px;
@@ -144,7 +144,8 @@ body {
 } 
 
 .find-text{
-    font-size: .9rem;
+    font-size: 1rem;
+    font-weight: 700;
     padding: 5px 0;
     color: black;
     text-align:center;
@@ -170,13 +171,12 @@ button{
     font-size: 16px;
     border-radius: 4px;
     padding: 8px 15px;
-    /* margin: auto 20px; */
     cursor: pointer;
-    /* float: right; */
+    
 } 
 
 @media screen and(min-width:250px){
-    .all-menus{
+    .food{
         flex-direction: column;
         flex-wrap: wrap;
     }
